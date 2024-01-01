@@ -1,5 +1,7 @@
 <body>
+    <!-- form for getting information from user -->
     <h1>Add Manager</h1>
+    <!-- display errors in a bullet point list at the top of the page -->
     <% if (errors != undefined) { %>
         <ul>
         <% errors.forEach((error) => { %>
@@ -7,7 +9,7 @@
         <% }) %>
         </ul>
         <% } %>
-    <form action="/addManager" method="POST">
+    <form action="/managers/addManager" method="POST">
         <label>ID:</label>
         <input type="text" name="id"><br>
         <label>Name</label>

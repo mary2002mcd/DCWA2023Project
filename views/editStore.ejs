@@ -1,5 +1,7 @@
 <body>
+    <!-- form for getting information from user -->
     <h1>Edit Store</h1>
+    <!-- display errors in a bullet point list at the top of the page -->
     <% if (errors != undefined) { %>
         <ul>
         <% errors.forEach((error) => { %>
@@ -7,7 +9,7 @@
         <% }) %>
         </ul>
         <% } %>
-    <form action="/stores/editStore"e method="POST">
+    <form action="/stores/editStore/:sid"e method="POST">
         <label>SID:</label>
         <input type="text" name="sid"><br>
         <label>Location</label>

@@ -1,13 +1,13 @@
 <h1>Managers (MongoDB)</h1>
-
-<a href="/addManager">Add Manager (MongoDB)</a><br>
+<!-- link to add another manager -->
+<a href="/managers/addManager">Add Manager (MongoDB)</a><br>
 <table border="1">
     <tr>
         <th>Manager ID</th>
         <th>Name</th>
         <th>Salary</th>
     </tr>
-    <!--employees comes from other page -->
+    <!--put the data in the table -->
      <% managers.forEach((mgr) =>{ %>
 <tr>
     <td><%= mgr._id %></td>

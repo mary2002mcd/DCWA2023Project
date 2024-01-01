@@ -1,21 +1,25 @@
 <h1>Products</h1>
 
+<!-- set border to 1 to make it look neater -->
 <table border="1">
     <tr>
+        <!-- headers -->
         <th>Product ID</th>
         <th>Description</th>
         <th>Store ID</th>
         <th>Location</th>
         <th>Price</th>
     </tr>
-    <!--employees comes from other page -->
+    <!--products - each row in table -->
      <% products.forEach((p) =>{ %>
 <tr>
+    <!-- put data in the table -->
     <td><%= p.pid %></td>
     <td><%= p.productdesc %></td>
     <td><%= p.sid %></td>
     <td><%= p.location %></td>
     <td><%= p.price %></td>
+    <!-- delete with specific pid -->
     <td><a href="/products/delete/<%= p.pid %>">delete</a></td>
 </tr>
 <% }) %>
