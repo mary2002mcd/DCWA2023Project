@@ -1,0 +1,21 @@
+<body>
+    <h1>Add Manager</h1>
+    <% if (errors != undefined) { %>
+        <ul>
+        <% errors.forEach((error) => { %>
+        <li><%= error.msg %></li>
+        <% }) %>
+        </ul>
+        <% } %>
+    <form action="/addManager" method="POST">
+        <label>ID:</label>
+        <input type="text" name="id"><br>
+        <label>Name</label>
+        <input type="text" name="name"><br>
+        <label>Salary</label>
+        <input type="text" name="salary"><br>
+        <input type="submit" value="OK">
+    </form>
+
+    <a href="/">Home</a>
+</body>
